@@ -1,19 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './Pages/Home/Home'
+
+import Header from '../src/Components/Header/Header'
+import Tags from '../src/Components/Tags/Tags'
+import About from '../src/Components/About/About'
+import Education from '../src/Components/Education/Education'
+import Skills from '../src/Components/Skills/Skills'
+import Certificate from '../src/Components/Certificate/Certificate'
+import Projects from '../src/Components/Projects/Projects'
+import Contact from '../src/Components/Contact/Contact'
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/home' element={<Home/>}></Route>
-        </Routes>
-      </BrowserRouter>
+    <Header/>
+    <Tags/>
+    <About/>
+    <Education/>
+    <Skills/>
+    <Certificate/>
+    <Projects/>
+    <Contact/>
     </>
   )
 }
