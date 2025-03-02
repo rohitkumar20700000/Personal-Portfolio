@@ -1,0 +1,29 @@
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: purple;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(229, 220, 229, 0.5);
+    font-size: large;
+    font-weight: bold;
+}
+.portimg{
+    width: 8%;
+    height: 40%;
+}
+.lightimg{
+    width: 8%;
+    height: 40%;
+    margin-left: auto;
+}
+.title{
+    width: 30%;
+    height: 90px;
+    color: white;
+    /* background-color: aqua; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

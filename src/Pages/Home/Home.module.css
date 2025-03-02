@@ -1,0 +1,51 @@
+/* Add the following media query for screens smaller than 768px (typical tablet/mobile breakpoint) */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+  
+    .tags {
+      flex-direction: column; /* Stack tags vertically */
+      height: auto; /* Allow tags to take up necessary height */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .tags h2 {
+      margin-bottom: 10px; /* Add space between tags */
+    }
+  
+    .aboutcom {
+      flex-direction: column; /* Stack image and text vertically */
+      text-align: center; /* Center text */
+    }
+  
+    .aboutcontent {
+      width: 90%; /* Make text take up more width */
+      margin-bottom: 20px; /* Add space between text and image */
+    }
+  
+    .img {
+      width: 80%; /* Make image smaller */
+    }
+  
+    .Educationcomponent,
+    .Skillscomponent,
+    .Certificatecomponent,
+    .Projectscomponent {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .EducationSource,
+    .SkillsSource,
+    .CertificateSource,
+    .ProjectsSource {
+      width: 90%; /* Make items take up more width */
+      margin-bottom: 20px; /* Add space between items */
+    }
+  
+    .downloadButton {
+      width: 50%; /* Make button wider */
+    }
+  
+    .ContactSource {
+      width: 90%; /* Make contact info take up more width */
+    }
+  }

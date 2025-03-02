@@ -1,0 +1,58 @@
+.Contact{
+    text-align: center;
+    padding: 40px;
+    background-color: whitesmoke;
+    height: 380px;
+}
+.Contact h1{    
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.ContactSource{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+    transition: 0.2s;
+}
+.ContactSource:hover{
+    border: 2px solid rgba(128, 0, 128,0.3);
+}
+
+.ContactSource p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #555;
+    margin: 8px 0;
+  }
+.socialIcons {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    margin-top: 10px;
+}
+.socialIcons img{
+    transition: 0.2s;
+}
+.socialIcons img:hover{
+    box-shadow: 0px 0px 15px rgba(128, 0, 128,0.5);  
+    border-radius: 10px;
+}
+  .ContactSource img{
+    width: 10%;
+    height: 40px;
+    gap: 30px;
+    padding-top: 0px 40%;
+    border-radius: 10px; 
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+
+
+  }
