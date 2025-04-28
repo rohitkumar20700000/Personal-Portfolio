@@ -6,6 +6,8 @@ import leedcodeimg from '../../assets/leetcode.png'
 import whatsappimg from '../../assets/whatsapp.png'
 import linkedinimg from '../../assets/linkedin.png'
 import gmailimg from '../../assets/gmail.png'
+import proimg from '../../assets/my photo.jpg'
+import proimgg from '../../assets/my photo1.png'
 
 const About = () => {
   return (
@@ -27,11 +29,13 @@ const About = () => {
             staying up to date with the latest advancements in software development.
           </p>
           <div className={Styles.socialicon}>
+            {/* <div className={Styles.socialiconWrapper}> */}
             <img onClick={()=>{window.location.href='https://github.com/rohitkumar20700000'}} className={Styles.imgs} src={githubimg} alt="img"></img>
             <img onClick={()=>{window.location.href='https://leetcode.com/u/rohit21500/'}} className={Styles.imgs} src={leedcodeimg} alt="img"></img>
             <img onClick={()=>{window.location.href='https://wa.me/9962734416'}} className={Styles.imgs} src={whatsappimg} alt="img"></img>
             <img onClick={()=>{window.location.href='https://www.linkedin.com/in/rohit-kumar-b65236237/'}} className={Styles.imgs} src={linkedinimg} alt="img"></img>
             <img onClick={()=>{window.location.href='mailto:rohipna@gmail.com'}} className={Styles.imgs} src={gmailimg} alt="img"></img>
+            {/* </div>           */}
           </div>
         </div>
         <img className={Styles.img} src={profileimg} alt='profileimg'></img>

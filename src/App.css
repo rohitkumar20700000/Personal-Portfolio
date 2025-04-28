@@ -49,3 +49,10 @@
       width: 90%; /* Make contact info take up more width */
     }
   }
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

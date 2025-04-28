@@ -2,7 +2,8 @@
     text-align: center;
     padding: 40px;
     background-color: whitesmoke;
-    height: 380px;
+    height: auto;
+    margin-bottom: 10px;
 }
 .Contact h1{    
     text-align: center;
@@ -56,3 +57,10 @@
 
 
   }
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

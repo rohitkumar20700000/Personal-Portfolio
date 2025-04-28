@@ -18,7 +18,7 @@ const Contact = () => {
                 <img onClick={()=>{window.location.href='https://github.com/rohitkumar20700000'}} className={Styles.imgs} src={githubimg} alt="img"></img>
                 <img onClick={()=>{window.location.href='https://wa.me/9962734416'}} className={Styles.imgs} src={whatsappimg} alt="img"></img>
                 <img onClick={()=>{window.location.href='https://www.linkedin.com/in/rohit-kumar-b65236237/'}} className={Styles.imgs} src={linkedinimg} alt="img"></img>
-                <img onClick={()=>{window.location.href='https://www.linkedin.com/in/rohit-kumar-b65236237/'}} className={Styles.imgs} src={portfolioweb} alt="img"></img>
+                <img onClick={()=>{window.location.href='https://rohitkumar20700000.github.io/Personal-Portfolio/'}} className={Styles.imgs} src={portfolioweb} alt="img"></img>
             </div>
         </div>   
             

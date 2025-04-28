@@ -3,10 +3,6 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
-
-
-
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -21,3 +17,27 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+/* For phones */
+@media (max-width: 600px) {
+  .nav, .header, .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+

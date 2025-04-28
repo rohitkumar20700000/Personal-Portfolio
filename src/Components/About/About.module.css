@@ -1,6 +1,5 @@
 .about {
     width: 100%;
-    height: 750px;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -47,13 +46,19 @@ p {
     margin-bottom: 15px;
 }
 .socialicon{
+    justify-content: center;
+    /* background-color: aqua; */
+    margin-bottom: 15px;
+    width: 70%;
     gap:20px ;
     display: flex;
     align-items: center;
     gap: 70px;
     padding-top: 0px 40%;
+    /* animation: scroll-left 5s linear infinite; */
 
 }
+
 .socialicon img:hover{
 /* Blue border with 50% opacity */
     box-shadow: 0px 0px 15px rgba(128, 0, 128,0.5);  /* Blue glow effect */
@@ -69,5 +74,13 @@ p {
 .img:hover{
     box-shadow: 0px 0px 15px rgba(128, 0, 128,0.5); 
     border-radius: 250px;
+    object-fit: cover;
 
 }
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
