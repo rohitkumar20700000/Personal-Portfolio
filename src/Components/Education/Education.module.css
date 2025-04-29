@@ -77,10 +77,82 @@
 
 
 }
-@media (max-width: 600px) {
-    nav, article {
-      width: 100%;
+/* Phones: up to 600px */
+@media screen and (max-width: 600px) {
+    .Educationcomponent {
+      flex-direction: column;
+      padding: 0 5%;
+    }
+  
+    .EducationSource {
+      width: 90%;
       height: auto;
     }
+  
+    .EducationSource h2 {
+      font-size: 18px;
+    }
+  
+    .EducationSource p {
+      font-size: 16px;
+    }
+  
+    .downloadButton {
+      width: 60%;
+      padding: 10px;
+    }
+  
+    .downloadButton h3 {
+      font-size: 18px;
+    }
   }
+  
+  /* Tablets: 601px to 1024px */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .Educationcomponent {
+      flex-direction: column;
+      padding: 0 10%;
+    }
+  
+    .EducationSource {
+      width: 70%;
+      height: auto;
+    }
+  
+    .EducationSource h2 {
+      font-size: 22px;
+    }
+  
+    .EducationSource p {
+      font-size: 18px;
+    }
+  
+    .downloadButton {
+      width: 40%;
+      padding: 10px;
+    }
+  
+    .downloadButton h3 {
+      font-size: 22px;
+    }
+  }
+  
+  /* Large Screens / TVs: 1025px and up */
+  @media screen and (min-width: 1025px) {
+    .Educationcomponent {
+      flex-direction: row;
+      padding: 0 15%;
+    }
+  
+    .EducationSource {
+      width: 30%;
+      height: 200px;
+    }
+  
+    .downloadButton {
+      width: 14%;
+      height: 12%;
+    }
+  }
+  
   

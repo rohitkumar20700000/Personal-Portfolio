@@ -58,4 +58,85 @@
       height: auto;
     }
   }
+  /* Mobile: max-width 600px */
+@media screen and (max-width: 600px) {
+    .Skills h1 {
+      font-size: 24px;
+    }
+  
+    .Skillscomponent {
+      flex-direction: column;
+      padding: 0 5%;
+      gap: 15px;
+    }
+  
+    .SkillsSource {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .SkillsSource h2 {
+      font-size: 18px;
+    }
+  
+    .SkillIcon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  /* Tablet: 601px–1024px */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .Skillscomponent {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .SkillsSource {
+      width: 40%;
+      height: auto;
+    }
+  
+    .Skills h1 {
+      font-size: 28px;
+    }
+  
+    .SkillsSource h2 {
+      font-size: 20px;
+    }
+  
+    .SkillIcon {
+      width: 65px;
+      height: 65px;
+    }
+  }
+  
+  /* Desktop: min-width 1025px */
+  @media screen and (min-width: 1025px) {
+    .Skillscomponent {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 7%;
+    }
+  
+    .SkillsSource {
+      width: 18%;
+      height: 200px;
+    }
+  
+    .Skills h1 {
+      font-size: 32px;
+    }
+  
+    .SkillsSource h2 {
+      font-size: 25px;
+    }
+  
+    .SkillIcon {
+      width: 75px;
+      height: 75px;
+    }
+  }
   

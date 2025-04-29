@@ -20,7 +20,7 @@ const Education = () => {
                     <p>Sri Venkateswara Matric Higher Secondary School</p>
                 </div>   
             </div>
-            <button className={Styles.downloadButton} onClick={() => window.location.href = './Rohit Kumar M--resume.pdf'}>
+            <button className={Styles.downloadButton} onClick={() => window.location.href = './Rohit kumar M-212221220045-resume.pdf'}>
                 <h3>View Resume</h3>
             </button>
         </div>

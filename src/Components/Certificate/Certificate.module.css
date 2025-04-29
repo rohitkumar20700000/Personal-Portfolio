@@ -56,10 +56,73 @@
 .CertificateSource:hover{
     border: 2px solid rgba(128, 0, 128,0.3);
 }
-@media (max-width: 600px) {
-    nav, article {
-      width: 100%;
-      height: auto;
+
+/* Phones: up to 600px */
+@media screen and (max-width: 600px) {
+    .Certificatecomponent {
+      flex-direction: column;
+      padding: 0 5%;
+    }
+  
+    .CertificateSource {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .CertificateSource h2 {
+      font-size: 20px;
+    }
+  
+    .CertificateSource p {
+      font-size: 16px;
+    }
+  
+    .CertificateSource img {
+      height: 150px;
     }
   }
   
+  /* Tablets: 601px to 1024px */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .Certificatecomponent {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 8%;
+    }
+  
+    .CertificateSource {
+      width: 45%;
+      padding: 18px;
+    }
+  
+    .CertificateSource h2 {
+      font-size: 22px;
+    }
+  
+    .CertificateSource p {
+      font-size: 18px;
+    }
+  
+    .CertificateSource img {
+      height: 180px;
+    }
+  }
+  
+  /* Large Screens / TVs: 1025px and up */
+  @media screen and (min-width: 1025px) {
+    .Certificatecomponent {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 15%;
+    }
+  
+    .CertificateSource {
+      width: 30%;
+    }
+  
+    .CertificateSource img {
+      height: 200px;
+    }
+  }
+    

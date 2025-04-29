@@ -94,11 +94,99 @@
 
 
 }
-@media (max-width: 600px) {
-    nav, article {
+
+ /* Mobile: max-width 600px */
+@media screen and (max-width: 600px) {
+    .Projectscomponent {
+      flex-direction: column;
+      padding: 0 5%;
+      gap: 20px;
+    }
+  
+    .ProjectsSource {
       width: 100%;
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+  
+    .Projects h1 {
+      font-size: 24px;
+    }
+  
+    .ProjectsSource h3 {
+      font-size: 20px;
+    }
+  
+    .ProjectsSource p {
+      font-size: 16px;
+    }
+  
+    .ViewProjectButton h3 {
+      font-size: 18px;
+    }
+  
+    .ViewProjectButton {
+      padding: 8px 10px;
       height: auto;
     }
   }
   
+  /* Tablet: 601px–1024px */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .Projectscomponent {
+      flex-direction: column;
+      padding: 0 10%;
+      gap: 25px;
+    }
   
+    .ProjectsSource {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .Projects h1 {
+      font-size: 28px;
+    }
+  
+    .ProjectsSource h3 {
+      font-size: 22px;
+    }
+  
+    .ProjectsSource p {
+      font-size: 18px;
+    }
+  
+    .ViewProjectButton h3 {
+      font-size: 20px;
+    }
+  }
+  
+  /* Desktop: min-width 1025px */
+  @media screen and (min-width: 1025px) {
+    .Projectscomponent {
+      flex-direction: row;
+      padding: 0 15%;
+      gap: 30px;
+    }
+  
+    .ProjectsSource {
+      width: 33%;
+    }
+  
+    .Projects h1 {
+      font-size: 32px;
+    }
+  
+    .ProjectsSource h3 {
+      font-size: 25px;
+    }
+  
+    .ProjectsSource p {
+      font-size: 20px;
+    }
+  
+    .ViewProjectButton h3 {
+      font-size: 25px;
+    }
+  }
+   

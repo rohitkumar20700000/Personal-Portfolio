@@ -14,10 +14,50 @@
     color: pink;
 
 }
-@media (max-width: 600px) {
-    nav, article {
-      width: 100%;
+/* Mobile: max-width 600px */
+@media screen and (max-width: 600px) {
+    .tags {
+      flex-wrap: wrap;
+      justify-content: center;
       height: auto;
+      padding: 10px 5%;
+      gap: 10px;
+    }
+  
+    .tags h2 {
+      font-size: 16px;
+      margin: 5px;
     }
   }
+  
+  /* Tablet: 601px–1024px */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .tags {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+      padding: 10px 10%;
+      gap: 15px;
+    }
+  
+    .tags h2 {
+      font-size: 18px;
+      margin: 5px 10px;
+    }
+  }
+  
+  /* Desktop: min-width 1025px */
+  @media screen and (min-width: 1025px) {
+    .tags {
+      height: 75px;
+      justify-content: space-between;
+      padding: 0px 15%;
+    }
+  
+    .tags h2 {
+      font-size: 20px;
+      margin: 0 10px;
+    }
+  }
+  
   

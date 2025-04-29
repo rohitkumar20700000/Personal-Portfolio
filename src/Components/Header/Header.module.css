@@ -27,10 +27,85 @@
     display: flex;
     justify-content: center;
 }
-@media (max-width: 600px) {
-    nav, article {
+/* Phones: up to 600px */
+@media screen and (max-width: 600px) {
+    .header {
+      height: 80px;
+      flex-direction: column;
+      font-size: medium;
+      padding: 10px 0;
+    }
+  
+    .title {
       width: 100%;
+      height: auto;
+      font-size: 20px;
+    }
+  
+    .title h1 {
+      font-size: 22px;
+    }
+  
+    .portimg {
+      width: 15%;
+      height: auto;
+      margin-left: 10px;
+    }
+  
+    .lightimg {
+      width: 15%;
+      height: auto;
+      margin: 10px auto 0;
+    }
+  }
+  
+  /* Tablets: 601px to 1024px */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .header {
+      height: 90px;
+      font-size: large;
+    }
+  
+    .title {
+      width: 80%;
+      height: auto;
+    }
+  
+    .title h1 {
+      font-size: 26px;
+    }
+  
+    .portimg {
+      width: 10%;
+      height: auto;
+    }
+  
+    .lightimg {
+      width: 10%;
       height: auto;
     }
   }
+  
+  /* Large Screens / TVs: 1025px and up */
+  @media screen and (min-width: 1025px) {
+    .header {
+      height: 100px;
+      font-size: large;
+    }
+  
+    .title {
+      width: 30%;
+    }
+  
+    .portimg {
+      width: 8%;
+      height: 40%;
+    }
+  
+    .lightimg {
+      width: 8%;
+      height: 40%;
+    }
+  }
+  
   
