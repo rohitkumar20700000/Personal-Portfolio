@@ -3,6 +3,7 @@ import Styles from './Certificate.module.css'
 import webcertificate from '../../assets/webcertificate.png'
 import reactcertificate from '../../assets/Reactcertificate.png'
 import leetcode from '../../assets/leetcodedbadge.png'
+import DSAJava from '../../assets/DSAJava.png'
 
 let certificates = [
     {
@@ -20,14 +21,14 @@ let certificates = [
       title: 'Developing Front-End Apps with React',
       source: 'Coursera',
       completion: 'Completed: July 2024'
-    },
-    {
-      id: 3,
-      card:'./2024-50.gif',
-      image: leetcode,
-      title: '50 Days Badge 2024',
-      source: 'Leetcode',
-      completion: 'Nov 2024'
+    },   
+     {
+      id: 4,
+      card:'./DSA With JavaBoostrap.pdf',
+      image: DSAJava,
+      title: 'Data Structures and Algorithms with Java',
+      source: 'LetsUpgrade',
+      completion: 'May 2025'
     }
   ];
 
