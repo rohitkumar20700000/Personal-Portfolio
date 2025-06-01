@@ -1,14 +1,26 @@
+.bgVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5;
+}
+
 .Education{
+    overflow: hidden; /* prevent overflow from video */
+    position: relative; /* Important for layering video */
     width: 100%;
     height: auto;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start; 
-    padding-top: 20px; 
+    justify-content: start;
+    padding-top: 20px;
     margin-bottom: 10px;
-    
 }
 .Education h1 {
     text-align: center;
@@ -23,136 +35,174 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 15%;
-
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Add some space between items */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
-.EducationSource{
-    width: 30%;
-    height: 200px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    transition: 0.2s;
-
+.EducationSource {
+  width: 30%;
+  min-height: 200px;
+  height: auto;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+  z-index: 1; /* Ensures it's above the background video */
 }
-.EducationSource:hover{
-    border: 2px solid rgba(128, 0, 128,0.3);
 
+.EducationSource:hover {
+  border: 2px solid rgba(128, 0, 128, 0.3);
 }
+
 .EducationSource h2 {
-    font-family: Arial, sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
 }
+
 .EducationSource p {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: #555;
-    margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.eduImage {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
 }
 .downloadButton {
     background-color:rgb(128, 0, 128);
     display: block;
-    width: 14%;
-    height: 12%;
-    padding: 10px 10px;
+    width: 180px; /* Adjusted to a fixed pixel width for better control */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px 20px; /* Increased padding for better button size */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; 
-    align-items: center;  
-    margin-bottom: 20px; 
+    border-radius: 10px;
+    text-align: center; /* Center text inside the button */
+    margin-bottom: 20px;
+    cursor: pointer; /* Indicate it's clickable */
+    border: none; /* Remove default button border */
 }
 .downloadButton h3 {
     font-family: Arial, sans-serif;
     font-size: 25px;
     color: white;
-    cursor: pointer;
     transition: 0.2s;
 }
 .downloadButton:hover{
     background-color: pink;
-
-
 }
 /* Phones: up to 600px */
 @media screen and (max-width: 600px) {
     .Educationcomponent {
       flex-direction: column;
       padding: 0 5%;
+      gap: 15px; /* Adjust gap for smaller screens */
     }
-  
+
     .EducationSource {
       width: 90%;
       height: auto;
+      min-height: unset; /* Remove min-height for very small screens if needed */
     }
-  
+
     .EducationSource h2 {
       font-size: 18px;
     }
-  
+
     .EducationSource p {
       font-size: 16px;
     }
-  
+
+    .eduImage {
+        width: 80px; /* Smaller image size for phones */
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
     .downloadButton {
       width: 60%;
       padding: 10px;
     }
-  
+
     .downloadButton h3 {
       font-size: 18px;
     }
   }
-  
+
   /* Tablets: 601px to 1024px */
   @media screen and (min-width: 601px) and (max-width: 1024px) {
     .Educationcomponent {
       flex-direction: column;
       padding: 0 10%;
+      gap: 25px; /* Adjust gap for tablets */
     }
-  
+
     .EducationSource {
       width: 70%;
       height: auto;
     }
-  
+
     .EducationSource h2 {
       font-size: 22px;
     }
-  
+
     .EducationSource p {
       font-size: 18px;
     }
-  
+
+    .eduImage {
+        width: 90px; /* Slightly smaller image for tablets */
+        height: 90px;
+        margin-bottom: 12px;
+    }
+
     .downloadButton {
       width: 40%;
       padding: 10px;
     }
-  
+
     .downloadButton h3 {
       font-size: 22px;
     }
   }
-  
+
   /* Large Screens / TVs: 1025px and up */
   @media screen and (min-width: 1025px) {
     .Educationcomponent {
       flex-direction: row;
       padding: 0 15%;
+      gap: 30px; /* Default gap for large screens */
     }
-  
+
     .EducationSource {
       width: 30%;
-      height: 200px;
+      min-height: 200px; /* Revert to min-height for larger screens */
+      height: auto;
     }
-  
+
+    .eduImage {
+        width: 100px; /* Original image size for large screens */
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
     .downloadButton {
       width: 14%;
-      height: 12%;
+      height: auto;
     }
   }
-  
-  

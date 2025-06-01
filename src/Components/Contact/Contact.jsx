@@ -4,11 +4,17 @@ import githubimg from '../../assets/github.png'
 import whatsappimg from '../../assets/whatsapp.png'
 import linkedinimg from '../../assets/linkedin.png'
 import portfolioweb from '../../assets/portfoliologo.png'
+import video from '../../assets/bg2.mp4'
 
 const Contact = () => {
   return (
     <>
         <div id='contact' className={Styles.Contact}>
+                  
+    <video autoPlay loop muted className={Styles.bgVideo}>
+    <source src={video} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
         <h1>Contact</h1>
         <div className={Styles.ContactSource}>
             <p>Email: <a href="mailto:rohipna@gmail.com">rohipna@gmal.com</a></p>

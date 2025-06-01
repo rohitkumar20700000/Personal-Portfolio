@@ -9,6 +9,7 @@ import Skills from '../src/Components/Skills/Skills'
 import Certificate from '../src/Components/Certificate/Certificate'
 import Projects from '../src/Components/Projects/Projects'
 import Contact from '../src/Components/Contact/Contact'
+import Achievement from './Components/Achievement/Achievement'
 
 function App() {
 
@@ -21,7 +22,9 @@ function App() {
     <Skills/>
     <Certificate/>
     <Projects/>
+    <Achievement/>
     <Contact/>
+
     </>
   )
 }

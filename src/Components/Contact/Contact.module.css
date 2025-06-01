@@ -1,9 +1,21 @@
+.bgVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5;
+}
 .Contact{
     text-align: center;
     padding: 40px;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     height: auto;
     margin-bottom: 10px;
+    position: relative; /* Important for layering video */
+    overflow: hidden; /* prevent overflow from video */
 }
 .Contact h1{    
     text-align: center;
@@ -12,7 +24,8 @@
     margin-bottom: 20px;
 }
 .ContactSource{
-    background: white;
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+    /* background: white; */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);

@@ -1,13 +1,24 @@
-.Certificate{
+.bgVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5;
+}.Certificate{
     width: 100%;
     height: auto;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start; 
     padding-top: 20px; 
     margin-bottom: 10px;
+    position: relative; /* Important for layering video */
+    overflow: hidden; /* prevent overflow from video */
 }
 .Certificate h1 {
     text-align: center;
@@ -27,7 +38,7 @@
 .CertificateSource{
     width: 30%;
     height: auto;
-    background-color: white;
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
     border-radius: 20px;
     padding: 20px;
     text-align: center;

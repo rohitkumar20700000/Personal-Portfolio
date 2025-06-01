@@ -3,6 +3,8 @@ import Styles from './Projects.module.css'
 import netflixClone from '../../assets/NetflixClone.png'
 import portfolioweb from '../../assets/PortfolioWeb.png'
 import equtityResearch from '../../assets/EquityNewsResearch.jpg'
+import stylematch from '../../assets/styleproject.png'
+import video from '../../assets/bg2.mp4'
 
 const Projects = () => {
     let projectData = [
@@ -27,10 +29,21 @@ const Projects = () => {
             "An advanced financial research tool designed to analyze and extract insights from equity news using Python, Streamlit, LangChain, FAISS, and OpenAI API. It processes data efficiently and generates semantic embeddings for deep financial analysis.",
           link: "https://github.com/rohitkumar20700000/Equity-News-Research-Tool"  
         },
+                {
+          imgSrc: stylematch,
+          title: "StyleMatch",
+          description:
+            "A StyleMatch-Hairgrooming,makeup services and Bridal Services Appointment booking site built using frontend-with HTML, CSS, and JavaScript;Backend-Springboot framework,Datajpi, entity annotation ;Postmapping,GetMapping and Model view controller logic for data manupulation,db-mysql",
+          link: "https://github.com/rohitkumar20700000/Style_MatchJava"  
+        }
       ];
   return (
     <>
         <div id='projects' className={Styles.Projects}>
+                  <video autoPlay loop muted className={Styles.bgVideo}>
+    <source src={video} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
             <h1>Projects</h1>
             <div className={Styles.Projectscomponent}>
                 {projectData.map((project, index) => (

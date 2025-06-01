@@ -16,6 +16,7 @@ const Tags = () => {
       <h2 onClick={() => scrollToSection('skills')}>Skills</h2>
       <h2 onClick={() => scrollToSection('certificate')}>Certificate</h2>
       <h2 onClick={() => scrollToSection('projects')}>Projects</h2>
+      <h2 onClick={() => scrollToSection('achievement')}>Achievements</h2>
       <h2 onClick={() => scrollToSection('contact')}>Contact</h2>
     </div>
   );

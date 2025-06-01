@@ -8,15 +8,21 @@ import linkedinimg from '../../assets/linkedin.png'
 import gmailimg from '../../assets/gmail.png'
 import proimg from '../../assets/my photo.jpg'
 import proimgg from '../../assets/my photo1.png'
+import video from '../../assets/bg2.mp4'
+
 
 const About = () => {
   return (
     <>
     <div id='about' className={Styles.about}>
+        <video autoPlay loop muted className={Styles.bgVideo}>
+    <source src={video} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
       <h1>About Me</h1>
       <div className={Styles.aboutcom}>
         <div className={Styles.aboutcontent}>
-          <p>
+         <p>
             Hello! I am Rohit Kumar, a passionate software developer with expertise in front-end
             development. I have a strong background in HTML, CSS, JavaScript, and React. I enjoy
             building responsive and dynamic web applications that enhance user experience.
